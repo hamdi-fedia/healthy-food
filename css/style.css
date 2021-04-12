@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-image: url(../img/11.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+#navbar {
+  box-shadow: 0px 0px 12px 0px #989898;
+}
+#navbar .logo {
+  width: 40%;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  min-width: 100%;
+  z-index: 1;
+}
+
+#histoire .bg-se1 {
+  background-image: url(../img/5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#histoire p {
+  padding: 20px;
+  font-size: 25px;
+}
+#histoire p strong {
+  color: #1f6234;
+  font-family: "Lobster", cursive;
+}
+
+#servic i {
+  color: #1f6234;
+  font-size: 50px;
+  text-align: center !important;
+}
+#servic .card {
+  border-color: transparent;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+#servic .card:hover {
+  box-shadow: 0px 0px 12px 0px #989898;
+}
+
+/*#products{
+
+}*/
+#customer {
+  background-image: url(../img/bgbgb.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+#customer .rounded {
+  border-radius: 50% !important;
+  border: 5px solid #1f6234;
+}
+#customer .bor-lef {
+  border-left: 1px solid #1f6234;
+}
+#customer .name {
+  float: right;
+  padding-top: 20px;
+}
+#customer p {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#Cooking i {
+  color: #1f6234;
+  margin: 5px;
+  font-size: 20px;
+}
+#Cooking span {
+  font-size: 15px;
+}
+
+#footer {
+  background-image: url(../img/footer_jour_v1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+h1 {
+  color: #1f6234;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

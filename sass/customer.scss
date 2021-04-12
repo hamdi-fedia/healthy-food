@@ -1,0 +1,25 @@
+@import "variables";
+#customer{
+    background-image: url(../img/bgbgb.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+   .rounded{
+       border-radius: 50% !important;
+       border: 5px solid $main-color;
+   }
+   .bor-lef{
+       border-left: 1px solid $main-color;
+   }
+   .name{
+       float: right;
+       padding-top: 20px;
+   }
+   p{
+       color: $white;
+       font-size: 18px;
+       padding: 10px;
+       
+   }
+}

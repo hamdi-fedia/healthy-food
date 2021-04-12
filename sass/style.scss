@@ -1,0 +1,22 @@
+@import "header.scss";
+@import "variables";
+@import "histoire.scss";
+@import "servic.scss";
+@import "products.scss";
+@import "customer.scss";
+@import "Cooking.scss";
+@import "footer.scss";
+
+
+body{
+    background: $bd-color;
+    
+}
+
+h1{
+    color: $main-color;
+    text-align: center;
+    font-family: $font;
+    margin: 20px;
+}
+

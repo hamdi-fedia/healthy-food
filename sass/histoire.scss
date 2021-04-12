@@ -1,0 +1,17 @@
+#histoire{
+    .bg-se1{
+        background-image: url(../img/5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    p{
+        padding: 20px;
+        font-size: 25px;
+        strong{
+            color: $main-color;
+            font-family: $font;
+        }
+    }
+}
