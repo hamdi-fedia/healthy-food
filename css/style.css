@@ -20,7 +20,15 @@ body {
   box-shadow: 0px 0px 12px 0px #989898;
 }
 #navbar .logo {
-  width: 40%;
+  width: 50%;
+}
+#navbar a {
+  font-family: "Lobster", cursive;
+  padding-right: 15px;
+  color: black;
+}
+#navbar a:hover {
+  color: #1f6234;
 }
 
 .sticky {
@@ -28,6 +36,11 @@ body {
   top: 0;
   min-width: 100%;
   z-index: 1;
+}
+
+.log {
+  width: 30% !important;
+  margin-left: 10px;
 }
 
 #histoire .bg-se1 {
@@ -45,6 +58,9 @@ body {
   font-family: "Lobster", cursive;
 }
 
+#servic {
+  font-size: 20px;
+}
 #servic i {
   color: #1f6234;
   font-size: 50px;
@@ -57,6 +73,9 @@ body {
 }
 #servic .card:hover {
   box-shadow: 0px 0px 12px 0px #989898;
+}
+#servic .card p {
+  padding: 15px;
 }
 
 /*#products{
@@ -74,7 +93,7 @@ body {
   border: 5px solid #1f6234;
 }
 #customer .bor-lef {
-  border-left: 1px solid #1f6234;
+  border-left: 1px solid #ffffff;
 }
 #customer .name {
   float: right;
@@ -84,15 +103,6 @@ body {
   color: #ffffff;
   font-size: 18px;
   padding: 10px;
-}
-
-#Cooking i {
-  color: #1f6234;
-  margin: 5px;
-  font-size: 20px;
-}
-#Cooking span {
-  font-size: 15px;
 }
 
 #footer {
