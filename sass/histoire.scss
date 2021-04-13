@@ -15,3 +15,17 @@
         }
     }
 }
+
+.dark-mode {
+    #histoire{
+        .bg-se1{
+            background-image: url(../img/152.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+        p{
+            color: white;
+        }
+}
+}

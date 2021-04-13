@@ -14,16 +14,33 @@ body {
    
   }
   #navbar{
+    background-color: white;
     box-shadow: 0px 0px 12px 0px #989898;
+    z-index: 5;
       .logo{
          width: 50%; 
+         margin-left: 25px;
       }
-      a{
+      li{
+        font-size: 20px;
         font-family: $font;
-        padding-right: 15px;
-        color: black;
+        padding-right: 17px;
+        color: black ;
+        a{
+          color: black;
+          &:hover{
+            color: $main-color;
+          }
+        }
         &:hover{
-          color: $main-color;
+          color: $main-color !important;
+        }
+      }
+      button{
+        border: none;
+        background-color: transparent;
+        &:hover{
+          color: $main-color !important;
         }
       }
   }
@@ -36,4 +53,27 @@ body {
   .log{
     width: 30%  !important;
     margin-left: 10px;
+  }
+
+  .dark-mode {
+    background-color: black;
+    #navbar{
+      background-color: black !important;
+      color: white;
+      li{
+        color: white;
+        &:hover{
+          color: $main-color;
+        }
+      }
+     a{
+       color: white;
+       &:hover{
+        color: $main-color;
+       }
+     }
+     button{
+       color: white;
+     }
+    }
   }
