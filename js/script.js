@@ -15,9 +15,16 @@ function myFunction() {
     logo[0].classList.remove("log")
   }
 }
-
-
 function fedia() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+}
+
+let carts = document.querySelectorAll('.add-cart')
+
+for (let i=0 ; i < carts.length ; i++ ){
+  carts[i].addEventListener('click' , () => {
+    console.log("salem");
+  })
+  
 }

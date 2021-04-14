@@ -24,3 +24,11 @@ p{
        font-size: 15px !important;
         }
 }
+.btn-green{
+    background-color: $main-color;
+    color: $white;
+    &:hover{
+        background-color: $white;
+        color: $main-color;
+    }
+}

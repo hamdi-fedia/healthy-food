@@ -2,12 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .header {
   background-image: url(../img/11.png);
   background-attachment: fixed;
@@ -22,7 +16,7 @@ body {
   z-index: 5;
 }
 #navbar .logo {
-  width: 50%;
+  width: 45%;
   margin-left: 25px;
 }
 #navbar li {
@@ -136,6 +130,10 @@ body {
 }
 #servic .card p {
   padding: 15px;
+}
+
+.dark-mode #servic {
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.205)), url(../img/bgg.jpg);
 }
 
 #products img {
@@ -347,11 +345,55 @@ body {
 }
 
 #footer {
-  background-image: url(../img/footer_jour_v1.jpg);
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.637)), url(../img/20.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
+  height: 350px;
+}
+@media only screen and (max-width: 990px) {
+  #footer {
+    height: 430px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  #footer {
+    height: 920px;
+  }
+}
+#footer .fix {
+  width: 90%;
+  margin-bottom: 20px;
+}
+#footer p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 2;
+}
+#footer h3 {
+  color: #ffffff;
+  font-family: "Lobster", cursive;
+}
+#footer li {
+  color: #ffffff !important;
+  font-size: 20px;
+  line-height: 2;
+}
+#footer li a {
+  color: #ffffff !important;
+  text-decoration: none;
+  line-height: 2;
+}
+#footer button {
+  background-color: #1f6234;
+  color: #ffffff;
+}
+#footer .copy {
+  border-top: 1px solid #ffffff;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 body {
@@ -372,6 +414,15 @@ p {
   p {
     font-size: 15px !important;
   }
+}
+
+.btn-green {
+  background-color: #1f6234;
+  color: #ffffff;
+}
+.btn-green:hover {
+  background-color: #ffffff;
+  color: #1f6234;
 }
 
 /*# sourceMappingURL=style.css.map */
