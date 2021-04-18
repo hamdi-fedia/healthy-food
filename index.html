@@ -50,7 +50,9 @@
                     <button onclick="fedia()"><i class="fas fa-moon"></i></button>
                    </li>
                    <li class="nav-item nav-link">
-                    <i class="fas fa-heart"></i>                  
+                    <button type="button"  data-toggle="modal" data-target="#staticBackdrop">
+                        <i class="fas fa-heart"></i>    
+                      </button>               
                    </li>
                    <li class="nav-item nav-link">
                     <button type="button" data-toggle="modal" data-target="#exampleModal">
@@ -67,30 +69,87 @@
 
 <!-- Button trigger modal -->
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">shopping cart</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-green">Save changes</button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">shopping cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <div class="row mt-3 ">
+              <div class="col-md-3">
+                <strong>Item</strong>
+              </div>
+              <div class="col-md-2">
+                <strong>Name</strong>
+              </div>
+              <div class="col-md-3">
+                <strong>Price</strong>
+              </div>
+              <div class="col-md-2">
+                <strong>Quantity</strong>
+              </div>
+              <div class="col-md-2">
+              </div>
+            </div>
+            <hr>
+             <div class="cart-item">
+             
+             
+             </div>
+              <div class="total">
+                <p>total</p><br>
+             <div class="card-total-price">20.000</div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-green">Save changes</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  
-
-
+      
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <strong>Item</strong>
+              </div>
+              <div class="col-md-2">
+                <strong>Name</strong>
+              </div>
+              <div class="col-md-3">
+                <strong>Price</strong>
+              </div>
+              <div class="col-md-4">
+              </div>
+            </div>
+            <hr>
+              <div class="cart-fav">
+                  
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          
+          </div>
+        </div>
+      </div>
+    
 
 
 
@@ -117,7 +176,7 @@
  
  <section id="servic">
   <div class="container pt-4 ">
-    <h1 class="g-title animate__animated animate__backInUp">Our service </h1><br>
+    <h1 class="g-title animate__animated animate__backInUp">Our services </h1><br>
       <div class="row d-flex justify-content-center">
           <div class="col-md-4 col-9 mt-2 text-center">
            <div class="card">
@@ -149,39 +208,35 @@
     <div class="row mt-3">
         <div class="col-md-3 col-6">
             <div class="product-grid3">
-                <div class="product-image3">
-                    <a href="#">
+                <div class="product-image3">    
                         <img class="pic-1" src="img/88.jpg">
-                    </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a type="button" class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a type="button" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Arti'Pasti</a></h3>
+                    <h3 class="title">Arti'Pasti</h3>
                     <div class="price">
                         7.500D
-                        <span>8.500D</span>
                     </div>
-                   
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-6">
             <div class="product-grid3">
                 <div class="product-image3">
-                    <a href="#">
+                    
                         <img class="pic-1" src="img/66.jpg">
-                    </a>
+                    
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a type="button" class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a type="button" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Chiche Champi</a></h3>
+                    <h3 class="title">Chiche Champi</h3>
                     <div class="price">
                         12.500 D
                     </div>
@@ -196,16 +251,15 @@
                         <img class="pic-1" src="img/75.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a type="button" class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a type="button" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Kale Beauté</a></h3>
+                    <h3 class="title">Kale Beauté</h3>
                     <div class="price">
                        15.500 D
-                        <span>16.500 D</span>
                     </div>
                 </div>
             </div>
@@ -217,16 +271,15 @@
                         <img class="pic-1" src="img/12.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a type="button"class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a type="button" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Make Me Healthy</a></h3>
+                    <h3 class="title">Make Me Healthy</h3>
                     <div class="price">
                         14.500 D
-                        <span>16.500 D</span>
                     </div>
                    
                 </div>
@@ -241,16 +294,15 @@
                         <img class="pic-1" src="img/3.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Mex'Chicken</a></h3>
+                    <h3 class="title"><a href="#">Mex' Chicken</a></h3>
                     <div class="price">
                         7.500D
-                        <span>8.500D</span>
                     </div>
                    
                 </div>
@@ -263,14 +315,14 @@
                         <img class="pic-1" src="img/6.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Pesto'Mato</a></h3>
                     <div class="price">
-                        $20.000 D
+                        20.000 D
                     </div>
                    
                 </div>
@@ -283,8 +335,8 @@
                         <img class="pic-1" src="img/7.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a  class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a  class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -292,7 +344,6 @@
                     <h3 class="title"><a href="#">Rice Trotter</a></h3>
                     <div class="price">
                         18.500 D
-                        <span>17.500 D</span>
                     </div>
                 </div>
             </div>
@@ -304,8 +355,8 @@
                         <img class="pic-1" src="img/8.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -313,7 +364,6 @@
                     <h3 class="title"><a href="#">Rainbowl</a></h3>
                     <div class="price">
                         25.500 D
-                        <span>26 D</span>
                     </div>
                    
                 </div>
@@ -328,8 +378,8 @@
                         <img class="pic-1" src="img/9.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -350,8 +400,8 @@
                         <img class="pic-1" src="img/10.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
                 <div class="product-content">
@@ -370,8 +420,8 @@
                         <img class="pic-1" src="img/11.png">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -391,8 +441,8 @@
                         <img class="pic-1" src="img/12.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -415,8 +465,8 @@
                         <img class="pic-1" src="img/13.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -437,8 +487,8 @@
                         <img class="pic-1" src="img/14.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
                 <div class="product-content">
@@ -457,8 +507,8 @@
                         <img class="pic-1" src="img/15.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -478,8 +528,8 @@
                         <img class="pic-1" src="img/16.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -502,8 +552,8 @@
                         <img class="pic-1" src="img/17.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -524,8 +574,8 @@
                         <img class="pic-1" src="img/18.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
                 <div class="product-content">
@@ -544,8 +594,8 @@
                         <img class="pic-1" src="img/19.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -565,8 +615,8 @@
                         <img class="pic-1" src="img/20.jpg">
                     </a>
                     <ul class="social">
-                        <li><a href="#" class="add-favorite"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a class="add-favorite"><i class="fa fa-heart"></i></a></li>
+                        <li><a class="add-cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">New</span>
                 </div>
@@ -688,9 +738,6 @@
                 <h3 class="mt-5 mb-4">Useful links</h3>
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="index.html" class="text-dark">Home</a>
-                    </li>
-                    <li>
                       <a href="#story" class="text-dark">Our story</a>
                     </li>
                     <li>
@@ -708,12 +755,6 @@
                 <h3 class="mt-5 mb-4">CONTACT US</h3>
                 <ul class="list-unstyled">
                     <li>
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="saisir votre E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-simplon" type="button" id="button-addon2">Envoyer</button>
-                      </div>
-                    </li>
-                    <li>
                       <i class="fas fa-phone-alt" aria-hidden="true"></i> 55 077 406
                     </li>
                     <li>
@@ -722,7 +763,13 @@
                     <li>
                       <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Ariana ,Cite Hedi Nouira
                     </li>
-                   
+                    <div class="row">
+                        <i class="fab fa-linkedin-in " aria-hidden="true"></i>
+                        <i class="fab fa-twitter " aria-hidden="true"></i>
+                        <i class="fab fa-facebook-f " aria-hidden="true"></i>
+                        <i class="fab fa-instagram " aria-hidden="true"></i>
+                        <i class="fab fa-youtube " aria-hidden="true"></i>
+                    </div>
                   </ul>
             </div>
         </div>
@@ -733,7 +780,7 @@
 </footer>
 
 
-<script src="js/bootstrap.js"></script>
+
 <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script></body>

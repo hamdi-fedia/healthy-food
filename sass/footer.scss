@@ -44,5 +44,13 @@
         font-size: 15px;
         color: $white;
     }
+    .fab{
+        color: $white !important;
+        margin: 10px;
+        font-size: 25px;
+        &:hover{
+            color: $main-color !important;
+        }
+    }
    
 }
