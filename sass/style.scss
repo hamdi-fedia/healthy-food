@@ -27,7 +27,9 @@ p{
     background-color: $main-color;
     color: $white;
 }
-
+.modal-title{
+    font-family: $font;
+}
 .modal-body {
     .img-cart{
     width:100%;

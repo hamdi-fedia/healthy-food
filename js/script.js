@@ -53,16 +53,16 @@ function  addItemToCart (name , prix , imgSrc){
   <div class="cart-item">
   <hr>
         <div class="row cart-row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-3">
              <img src="${imgSrc}" alt="" class="img-cart" >
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-3">
             <span>${name}</span>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-3">
             <spen class="cart-price">${prix}</spen>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-3">
             <input type="number" class="card-quantity" name="" value="1" id="">
           </div>
          
@@ -113,18 +113,16 @@ function addItemToCartFavorit (name , price , imgSrc){
   
   itemFav.innerHTML += `
   <div class="row mt-3 ">
-  <div class="col-md-3">
-    <img src="${imgSrc}" class="img-cart" >
+  <div class="col-md-4 col-4">
+    <img src="${imgSrc}" class="img-cart pic-1fav" >
   </div>
-  <div class="col-md-3">
-    <strong>${name}</strong>
+  <div class="col-md-4 col-4">
+    <strong class="titlefav">${name}</strong>
   </div>
-  <div class="col-md-3">
-    <strong>${price}</strong>
+  <div class="col-md-4 col-4">
+    <strong class="pricefav">${price}</strong>
   </div>
-  <div class="col-md-3">
-  <button type="button" class="btn btn-vert add-cart"><i class="fas fa-shopping-cart"></i> </button>
-  </div>
+ 
 </div>
   ` 
  
@@ -150,3 +148,19 @@ function addQuantityRomove () {
   </div>
  `
 }
+
+let item = document.querySelector('.cart-item')
+
+
+let remov = document.querySelectorAll('.btn-danger')
+for ( var i = 0 ; i < remov.length ; i++){
+ remov[i].addEventListener('click', function (event){
+    var btn=event.target
+    btn.parentElement.parentElement.remove()
+ 
+ })
+}
+
+
+
+
