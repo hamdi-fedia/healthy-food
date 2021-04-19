@@ -6,6 +6,16 @@
    background-repeat: no-repeat;
    background-size: cover;
    height: 300px;
+
+   button{
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    padding: 20px;
+    &:hover{
+      color: $main-color !important;
+    }
+  }
    
   }
   #navbar{
@@ -38,6 +48,8 @@
           color: $main-color !important;
         }
       }
+
+      
   }
   .sticky {
     position: fixed  !important;
@@ -67,8 +79,9 @@
         color: $main-color;
        }
      }
-     button{
-       color: white;
-     }
+     
+    }
+    button{
+      color: white;
     }
   }

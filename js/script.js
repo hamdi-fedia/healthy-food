@@ -56,18 +56,16 @@ function  addItemToCart (name , prix , imgSrc){
           <div class="col-md-3">
              <img src="${imgSrc}" alt="" class="img-cart" >
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <span>${name}</span>
           </div>
           <div class="col-md-3">
             <spen class="cart-price">${prix}</spen>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <input type="number" class="card-quantity" name="" value="1" id="">
           </div>
-          <div class="col-md-2">
-            <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-          </div>
+         
         </div>
         <hr>
        </div>
@@ -79,8 +77,10 @@ function  addItemToCart (name , prix , imgSrc){
 
 function addQuantity () {
   totalCart.innerHTML = `
-  <h4>${calculTotal()}</h4>
-
+  <div class="pos">
+  
+  <h4> <b>Total Price   </b>   ${calculTotal()} Dt</h4>
+  </div>
  `
 }
 
@@ -116,16 +116,13 @@ function addItemToCartFavorit (name , price , imgSrc){
   <div class="col-md-3">
     <img src="${imgSrc}" class="img-cart" >
   </div>
-  <div class="col-md-2">
+  <div class="col-md-3">
     <strong>${name}</strong>
   </div>
   <div class="col-md-3">
     <strong>${price}</strong>
   </div>
-  <div class="col-md-2">
-  <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-  </div>
-  <div class="col-md-2">
+  <div class="col-md-3">
   <button type="button" class="btn btn-vert add-cart"><i class="fas fa-shopping-cart"></i> </button>
   </div>
 </div>
@@ -135,4 +132,21 @@ function addItemToCartFavorit (name , price , imgSrc){
 
 
 
+document.querySelector('.all').addEventListener('click', purchaseClicked)
+function purchaseClicked() {
+  var cartItems = document.querySelector('.cart-item')
+  while (cartItems.hasChildNodes()) {
+      cartItems.removeChild(cartItems.firstChild)
+  
+  }
+  addQuantityRomove ()
+}
 
+
+function addQuantityRomove () {
+  totalCart.innerHTML = `
+  <div class="pos">
+  <h4> <b>Total Price   </b>   0 Dt</h4>
+  </div>
+ `
+}
